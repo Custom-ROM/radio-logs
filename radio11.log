@@ -1,0 +1,428 @@
+01-01 11:51:09.649   288   288 D RILD    : RIL_Init argc = 5 clientId = 0
+01-01 11:51:09.657   288   288 E RILQ    : log to /data/misc/radio/ril_log for QCRIL logging is not enabled
+01-01 11:51:09.682   288   288 E RILQ    : (0/288): RIL[0][rild] qcril_qmi_load_esoc_info: Unexpected number of modems 0
+01-01 11:51:09.741   288   288 D RILD    : RIL_Init rilInit completed
+01-01 11:51:09.741   288   288 I RILC    : SIM_COUNT: 1
+01-01 11:51:09.741   288   288 E RILC    : RIL_register: RIL version 11
+01-01 11:51:09.741   288   288 I RILC    : s_registerCalled flag set, 1
+01-01 11:51:09.741   288   288 I RILC    : Start to listen RIL_SOCKET_1
+01-01 11:51:09.741   288   288 D RILD    : RIL_Init RIL_register completed
+01-01 11:51:09.741   288   288 D RILD    : RIL_register_socket started
+01-01 11:51:09.741   288   288 D RIL_UIM_SOCKET: Adding socket with id: 0
+01-01 11:51:09.741   288   288 D RILD    : RIL_register_socket completed
+01-01 11:51:09.741   288   288 D RILD    : RIL_Init starting sleep loop
+01-01 11:51:09.756   288   366 E RILQ    : (0/288): RIL[0][main] qcril_qmi_vote_for_modem_up_using_esoc: ESOC node is not available
+01-01 11:51:11.095   288   288 D RILD    : **RIL Daemon Started**
+01-01 11:51:11.095   288   288 D RILD    : **RILd param count=1**
+01-01 11:51:12.192   305   305 D TelephonyManager: /proc/cmdline=androidboot.hardware=yukon androidboot.selinux=permissive user_debug=31 msm_rtb.filter=0x37 console=ttyHSL0,115200,n8 coherent_pool=8M vmalloc=400M mem=1003M androidboot.emmc=true androidboot.bootloader=s1 oemandroidboot.s1boot=1274-7024_S1_Boot_MSM8x26_LA1.0_1029 androidboot.serialno=YT910QEQSP ta_info=1,16,256 startup=0x00000001 warmboot=0x77665501 oemandroidboot.imei=3518670627405400 oemandroidboot.phoneid=0000:3518670627405400,0000:3518670627405500 oemandroidboot.security=0 oemandroidboot.babe090a=01 display_status=off androidboot.baseband=msm
+01-01 11:51:17.667   650   926 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:18.507   650   664 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:18.758   288   366 I RILQ    : (0/288):RIL[0][main] qcril_qmi_init_core_client_handles: Client init failed, details: QMI Voice
+01-01 11:51:19.766   650   671 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:19.785   650   650 D TelephonyRegistry: systemRunning register for intents
+01-01 11:51:20.075  1176  1176 D TDC     : updateOrInsert: inserting: Modem { uuid=modem, state=0, rilModel=0, rat={}, maxActiveVoiceCall=1, maxActiveDataCall=1, maxStandby=1 }
+01-01 11:51:20.075  1176  1176 D TDC     : updateOrInsert: inserting: Sim { uuid=sim, modemUuid=modem, state=0 }
+01-01 11:51:20.085  1176  1176 D CdmaSSM : subscriptionSource from settings: 1
+01-01 11:51:20.085  1176  1176 I PhoneFactory: Cdma Subscription set to 1
+01-01 11:51:20.093  1176  1176 I PhoneFactory: Network Mode set to 9
+01-01 11:51:20.094  1176  1176 D RILJ    : RIL(context, preferredNetworkType=9 cdmaSubscription=1)
+01-01 11:51:20.097  1176  1176 D RILJ    : Starting RILReceiver0 [SUB0]
+01-01 11:51:20.099   288   366 I RILC    : libril: new connection to RIL_SOCKET_1
+01-01 11:51:20.099   288   366 I RILC    : RIL Daemon version: Qualcomm RIL 1.0
+01-01 11:51:20.100  1176  1251 I RILJ    : (0) Connected to 'rild' socket
+01-01 11:51:20.101  1176  1251 D RILJ    : [UNSL]< UNSOL_RIL_CONNECTED {11} [SUB0]
+01-01 11:51:20.101  1176  1251 D RILJ    : [3648]> RADIO_POWER off [SUB0]
+01-01 11:51:20.105  1176  1176 D RILJ    : [3649]> GET_HARDWARE_CONFIG [SUB0]
+01-01 11:51:20.108  1176  1251 D RILJ    : [3650]> RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE : 1 [SUB0]
+01-01 11:51:20.112  1176  1251 D RILJ    : setCellInfoListRate: 2147483647 [SUB0]
+01-01 11:51:20.112  1176  1251 D RILJ    : [3651]> RIL_REQUEST_SET_CELL_INFO_LIST_RATE [SUB0]
+01-01 11:51:20.114  1176  1251 D RILJ    : [UNSL]< UNSOL_RESPONSE_RADIO_STATE_CHANGED RADIO_UNAVAILABLE [SUB0]
+01-01 11:51:20.116  1176  1176 I PhoneFactory: Creating SubscriptionController
+01-01 11:51:20.118  1176  1251 D RilRequest: [3648]< RADIO_POWER error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.119  1176  1251 D RilRequest: [3651]< RIL_REQUEST_SET_CELL_INFO_LIST_RATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.119  1176  1251 D RilRequest: [3650]< RIL_REQUEST_CDMA_SET_SUBSCRIPTION_SOURCE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.119  1176  1251 D RilRequest: [3649]< GET_HARDWARE_CONFIG error: com.android.internal.telephony.CommandException: REQUEST_NOT_SUPPORTED ret=
+01-01 11:51:20.121  1176  1176 D SubscriptionController: [SubscriptionController] init by Context
+01-01 11:51:20.135  1176  1176 D UiccController: Creating UiccController
+01-01 11:51:20.140  1176  1176 D TelephonyTester: register for intent action=com.android.internal.telephony.gsm.action_detached
+01-01 11:51:20.140  1176  1176 D TelephonyTester: register for intent action=com.android.internal.telephony.gsm.action_attached
+01-01 11:51:20.170  1176  1176 D PhoneBase: mDoesRilSendMultipleCallRing=false
+01-01 11:51:20.170  1176  1176 D PhoneBase: mCallRingDelay=3000
+01-01 11:51:20.178  1176  1176 D RILJ    : [3652]> RIL_REQUEST_START_LCE [SUB0]
+01-01 11:51:20.178  1176  1176 D RILJ    : setPhoneType=1 old value=0 [SUB0]
+01-01 11:51:20.180  1176  1251 D RilRequest: [3652]< RIL_REQUEST_START_LCE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.192   650  1226 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:20.192  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+01-01 11:51:20.197  1176  1176 D RILJ    : [3653]> SIGNAL_STRENGTH [SUB0]
+01-01 11:51:20.202  1176  1176 D DCT     : [0]DCT.constructor
+01-01 11:51:20.202  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.205  1176  1176 D DCT     : [0]getDataEnabled: getIntWithSubId retVal=true
+01-01 11:51:20.208  1176  1251 D RilRequest: [3653]< SIGNAL_STRENGTH error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.209   650   926 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:20.221  1176  1176 D Dcc     : E ctor
+01-01 11:51:20.221  1176  1176 D Dcc     : X ctor
+01-01 11:51:20.225  1176  1176 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 11:51:20.225  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.226  1176  1263 D DcTesterDeacativeAll: register for intent action=com.android.internal.telephony.dataconnection.action_deactivate_all
+01-01 11:51:20.226  1176  1263 D DcTesterDeacativeAll: register for intent action=com.android.internal.telephony.gsm.action_detached
+01-01 11:51:20.227  1176  1263 D Dcc     : DccDefaultState: msg.what=EVENT_RIL_CONNECTED mRilVersion=11
+01-01 11:51:20.229  1176  1176 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.dataconnection.action_fail_bringup
+01-01 11:51:20.229  1176  1176 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.gsm.action_detached
+01-01 11:51:20.229  1176  1176 D DcTesterFailBrinupAll: register for intent action=com.android.internal.telephony.gsm.action_attached
+01-01 11:51:20.230  1176  1176 D DCT     : [0]GsmDCT.constructor
+01-01 11:51:20.230  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.231  1176  1176 D DCT     : [0]update sub = -2
+01-01 11:51:20.231  1176  1176 D DCT     : [0]update(): Active DDS, register for all events now!
+01-01 11:51:20.231  1176  1176 D GsmSST  : [GsmSST] notifyDataRegStateRilRadioTechnologyChanged: drs=1 rat=0
+01-01 11:51:20.231  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.network.type value: Unknown propVal=Unknown
+01-01 11:51:20.232  1176  1176 D DCT     : [0]getDataEnabled: getIntWithSubId retVal=true
+01-01 11:51:20.239  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.241  1176  1176 D GSMPhone: [GSMPhone] updateCurrentCarrierInProvider: mSubId = -2 currentDds = -1 operatorNumeric = null
+01-01 11:51:20.245  1176  1176 D DCT     : [0]initApnContexts: E
+01-01 11:51:20.247  1176  1176 D DCT     : [0]initApnContexts: skipping unknown type=1
+01-01 11:51:20.256  1176  1176 D DCT     : [0]initApnContexts: apnContext={mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.256  1176  1176 D DCT     : [0]initApnContexts: apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.256  1176  1176 D DCT     : [0]initApnContexts: apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.256  1176  1176 D DCT     : [0]initApnContexts: apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.257  1176  1176 D DCT     : [0]initApnContexts: apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.257  1176  1176 D DCT     : [0]initApnContexts: skipping unknown type=13
+01-01 11:51:20.257  1176  1176 D DCT     : [0]initApnContexts: skipping unknown type=7
+01-01 11:51:20.257  1176  1176 D DCT     : [0]initApnContexts: X mApnContexts={default={mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}, mms={mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}, supl={mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}, dun={mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}, hipri={mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=dataEnabled mDataEnabled=false mDependencyMet=true}}
+01-01 11:51:20.294   650   650 D TelephonyRegistry: notifyCellLocationForSubscriber: subId=0 cellLocation=Bundle[{cid=-1, lac=-1, psc=-1}]
+01-01 11:51:20.295  1176  1203 D SubscriptionController: [getPhoneId]- no sims, returning default phoneId=2147483647
+01-01 11:51:20.331  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.current.phone-type value: 1 propVal=1
+01-01 11:51:20.333  1176  1176 D GSMPhone: [GSMPhone] GSMPhone: constructor: sub = 0
+01-01 11:51:20.333  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.current.phone-type value: 1 propVal=1
+01-01 11:51:20.333  1176  1176 I PhoneFactory: Creating Phone with type = 1 sub = 0
+01-01 11:51:20.339  1176  1176 E RIL_ImsSms: getFormat should never be called from here!
+01-01 11:51:20.339  1176  1176 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=true format=unknown mSmsSendDisabled=false
+01-01 11:51:20.339  1176  1176 D RIL_ImsSms: ImsSMSDispatcher created
+01-01 11:51:20.341  1176  1176 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=true format=3gpp2 mSmsSendDisabled=false
+01-01 11:51:20.341  1176  1176 D CdmaSMSDispatcher: CdmaSMSDispatcher created
+01-01 11:51:20.368  1176  1176 D GsmInboundSmsHandler: created InboundSmsHandler
+01-01 11:51:20.419  1176  1176 D CdmaInboundSmsHandler: created InboundSmsHandler
+01-01 11:51:20.449  1176  1176 D SMSDispatcher: SMSDispatcher: ctor mSmsCapable=true format=3gpp mSmsSendDisabled=false
+01-01 11:51:20.449  1176  1176 D GsmSMSDispatcher: GsmSMSDispatcher created
+01-01 11:51:20.451  1176  1176 D IccCardProxy: ctor: ci=com.android.internal.telephony.RIL@f4adfbb phoneId=0
+01-01 11:51:20.451  1176  1176 D CdmaSSM : subscriptionSource from settings: 1
+01-01 11:51:20.451  1176  1176 D CdmaSSM : cdmaSSM constructor: 1
+01-01 11:51:20.451  1176  1176 D IccCardProxy: update icc_operator_numeric=
+01-01 11:51:20.451  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.numeric value:  propVal=
+01-01 11:51:20.458  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.iso-country value:  propVal=
+01-01 11:51:20.460  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.operator.alpha value:  propVal=
+01-01 11:51:20.460  1176  1325 D SmsBroadcastUndelivered: scanning raw table for undelivered messages
+01-01 11:51:20.460  1176  1176 E IccCardProxy: setExternalState: set mPhoneId=0 mExternalState=NOT_READY
+01-01 11:51:20.460  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.sim.state value: NOT_READY propVal=NOT_READY
+01-01 11:51:20.461  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.461  1176  1176 D IccCardProxy: broadcastIccStateChangedIntent intent ACTION_SIM_STATE_CHANGED value=NOT_READY reason=null for mPhoneId=0
+01-01 11:51:20.466  1176  1176 D IccCardProxy: Setting radio tech UMTS
+01-01 11:51:20.466  1176  1176 D TelephonyManager: getLteOnCdmaMode=0 curVal=0 product_type='' lteOnCdmaProductType=''
+01-01 11:51:20.466  1176  1176 D IccCardProxy: updateQuietMode: 3GPP subscription -> newQuietMode=false
+01-01 11:51:20.466  1176  1176 D IccCardProxy: updateQuietMode: no changes don't setExternalState
+01-01 11:51:20.466  1176  1176 D IccCardProxy: updateQuietMode: QuietMode is false (app_type=1 isLteOnCdmaMode=false cdmaSource=-1)
+01-01 11:51:20.468  1176  1176 D ProxyController: Constructor - Enter
+01-01 11:51:20.468  1176  1176 D DctController: makeDctController: new DctController phones.length=1
+01-01 11:51:20.469  1176  1176 D DctController: DctController(): phones.length=1
+01-01 11:51:20.478  1176  1176 D DcSwitchSM: [DcSwitchStateMachine-0] DcSwitchState constructor E
+01-01 11:51:20.478  1176  1176 D DcSwitchSM: [DcSwitchStateMachine-0] DcSwitchState constructor X
+01-01 11:51:20.480  1176  1327 D DcSwitchSM: [DcSwitchStateMachine-0] IdleState: enter
+01-01 11:51:20.490  1176  1176 D DctController: DctController(phones): Connect success: 0
+01-01 11:51:20.490  1176  1176 D DctController: updatePhoneBaseForIndex for phone index=0
+01-01 11:51:20.490  1176  1176 D DctController: unregister TelephonyNetworkFactory for phone index=0
+01-01 11:51:20.491  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.492  1176  1176 D DctController: [TNF -2]NetworkCapabilities: [ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&IA&RCS&XCAP&EIMS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN]
+01-01 11:51:20.494   650   923 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:20.494  1176  1176 D DctController: makeDctController: X sDctController=Handler (com.android.internal.telephony.dataconnection.DctController) {b86dc69}
+01-01 11:51:20.499  1176  1176 D ProxyController: clearTransaction
+01-01 11:51:20.499  1176  1176 D ProxyController: clearTransaction: phoneId=0 status=IDLE
+01-01 11:51:20.499  1176  1176 D ProxyController: Constructor - Exit
+01-01 11:51:20.511  1176  1325 D SmsBroadcastUndelivered: finished scanning raw table in 51 ms
+01-01 11:51:20.512  1176  1281 D GsmInboundSmsHandler: StartupState.processMessage:6
+01-01 11:51:20.512  1176  1281 D GsmInboundSmsHandler: entering Idle state
+01-01 11:51:20.512  1176  1288 D CdmaInboundSmsHandler: StartupState.processMessage:6
+01-01 11:51:20.513  1176  1288 D CdmaInboundSmsHandler: entering Idle state
+01-01 11:51:20.526  1176  1207 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:20.536  1176  1207 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:20.541  1176  1176 I PhoneFactory: defaultSmsApplication: com.android.messaging
+01-01 11:51:20.545  1176  1176 I PhoneFactory: Creating SubInfoRecordUpdater 
+01-01 11:51:20.545  1176  1176 D SubscriptionInfoUpdater: Constructor invoked
+01-01 11:51:20.560  1176  1176 D CallManager: registerPhone(GSM Handler (com.android.internal.telephony.PhoneProxy) {682bc08})
+01-01 11:51:20.584   650  1226 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:20.606  1176  1176 D RILJ    : [3654]> RIL_REQUEST_SET_TTY_MODE : 0 [SUB0]
+01-01 11:51:20.609   650  1226 D TelephonyRegistry: listen oscl: hasNotifySubscriptionInfoChangedOccurred==false no callback
+01-01 11:51:20.611  1176  1176 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 11:51:20.611  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.611  1176  1176 D UiccController: EVENT_RADIO_UNAVAILABLE, dispose card
+01-01 11:51:20.612  1176  1176 D PhoneBase: config LCE service failed: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE
+01-01 11:51:20.612  1176  1176 D RILJ    : [3655]> GET_CURRENT_CALLS [SUB0]
+01-01 11:51:20.614  1176  1251 D RilRequest: [3654]< RIL_REQUEST_SET_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] mDeviceShuttingDown = false
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] mDesiredPowerState = true
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] getRadioState = RADIO_UNAVAILABLE
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] mPowerOffDelayNeed = true
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] mAlarmSwitch = false
+01-01 11:51:20.615  1176  1176 D PHONE   : [ServiceState] setNullState=1
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] Poll ServiceState done:  oldSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported 0 0 RoamInd=0 DefRoamInd=0 EmergOnly=false IsDataRoamingFromRegistration=false] newSS=[1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false] oldMaxDataCalls=1 mNewMaxDataCalls=1 oldReasonDataDenied=-1 mNewReasonDataDenied=-1
+01-01 11:51:20.615  1176  1176 D PHONE   : [ServiceState] setNullState=1
+01-01 11:51:20.615  1176  1176 D GsmSST  : [GsmSST] updateSpnDisplay: radio is on but out of service, set plmn='No service.'
+01-01 11:51:20.616  1176  1251 D RilRequest: [3655]< GET_CURRENT_CALLS error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.616  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.617  1176  1176 D GsmSST  : [GsmSST] updateSpnDisplay: changed sending intent rule=0 showPlmn='true' plmn='No service.' showSpn='false' spn='' dataSpn='' subId='-2'
+01-01 11:51:20.617  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.619  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.619  1176  1176 D SubscriptionController: [setPlmnSpn] No valid subscription to store info
+01-01 11:51:20.620  1176  1176 D SubscriptionController: notifySubscriptionInfoChanged:
+01-01 11:51:20.620   650   927 D TelephonyRegistry: notifySubscriptionInfoChanged: first invocation mRecords.size=15
+01-01 11:51:20.624  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.alpha value:  propVal=
+01-01 11:51:20.625  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.numeric value:  propVal=
+01-01 11:51:20.626  1176  1207 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:20.626  1176  1176 D GsmSST  : [GsmSST] operatorNumeric is null
+01-01 11:51:20.626  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.iso-country value:  propVal=
+01-01 11:51:20.627  1176  1176 D TelephonyManager: setTelephonyProperty: success phoneId=0 property=gsm.operator.isroaming value: false propVal=false
+01-01 11:51:20.627  1176  1176 D GsmSST  : [GsmSST] Broadcasting ServiceState : 1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false
+01-01 11:51:20.628  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.628  1176  1176 D DefaultPhoneNotifier: nofityServiceState: mRegistry=com.android.internal.telephony.ITelephonyRegistry$Stub$Proxy@7d9a723 ss=1 1 voice home data home null null null null null null  Unknown Unknown CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=false sender=Handler (com.android.internal.telephony.gsm.GSMPhone) {124afa1} phondId=0 subId=-2
+01-01 11:51:20.631  1176  1176 D SubscriptionController: [getSlotId]- subId invalid
+01-01 11:51:20.631  1176  1207 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:20.631  1176  1176 D SubscriptionController: getSimStateForSlotIdx:  simState=NOT_READY ordinal=6
+01-01 11:51:20.632   650   923 D SubscriptionManager: getSimStateForSubscriber: simState=6 slotIdx=0
+01-01 11:51:20.632   650   923 D TelephonyManager: getSimState: default sim:-1, sim state for slotIdx=0 is 6, return state as unknown
+01-01 11:51:20.635  1176  1176 D DCT     : [0]handleMessage msg={ when=-432ms what=270369 obj=android.os.AsyncResult@ab0420 target=com.android.internal.telephony.dataconnection.DcTracker }
+01-01 11:51:20.635  1176  1176 D DCT     : [0]handleMessage msg={ when=-405ms what=270342 obj=android.os.AsyncResult@4d2b1d9 target=com.android.internal.telephony.dataconnection.DcTracker }
+01-01 11:51:20.635  1176  1176 D DCT     : [0]onRadioOffOrNotAvailable: is off and clean up all connections
+01-01 11:51:20.635  1176  1176 D DCT     : [0]cleanUpAllConnections: tearDown=false reason=radioTurnedOff
+01-01 11:51:20.635  1176  1176 D DCT     : [0]cleanUpConnection: tearDown=false reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.636  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.637  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.638  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.642  1176  1176 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+01-01 11:51:20.642  1176  1176 D DCT     : [0]cleanUpConnection: tearDown=false reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.642  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.643  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.643  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.646  1176  1176 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+01-01 11:51:20.647  1176  1176 D DCT     : [0]cleanUpConnection: tearDown=false reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.647  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.647  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.648  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.649  1176  1176 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+01-01 11:51:20.649  1176  1176 D DCT     : [0]cleanUpConnection: tearDown=false reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.650  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.651  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.656  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.670  1176  1176 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+01-01 11:51:20.671  1176  1176 D DCT     : [0]cleanUpConnection: tearDown=false reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.671  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.672  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.672  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.674  1176  1176 D DCT     : [0]cleanUpConnection: X tearDown=false reason=radioTurnedOff apnContext={mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true} dcac=null
+01-01 11:51:20.674  1176  1176 D DCT     : [0]stopNetStatPoll
+01-01 11:51:20.674  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.675  1176  1176 D DCT     : [0]cleanUpConnection: mDisconnectPendingCount = 0
+01-01 11:51:20.675  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.675  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.676  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.677  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.678  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.679  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.680  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.681  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.682  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.684  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.684  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.685  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.686  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.687  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.688  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.690  1176  1176 D DCT     : [0]handleMessage msg={ when=-460ms what=270345 obj=android.os.AsyncResult@6bc079e target=com.android.internal.telephony.dataconnection.DcTracker }
+01-01 11:51:20.690  1176  1176 D DCT     : [0]onDataConnectionDetached: stop polling and notify detached
+01-01 11:51:20.690  1176  1176 D DCT     : [0]stopNetStatPoll
+01-01 11:51:20.690  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.693  1176  1176 D DCT     : [0]notifyDataConnection: reason=dataDetached
+01-01 11:51:20.693  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.694  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.695  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.697  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.697  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.699  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.700  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.701  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.705  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.708  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.709  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.710  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.712  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.713  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.713  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.714  1176  1176 D DCT     : [0]handleMessage msg={ when=-484ms what=270348 obj=android.os.AsyncResult@a95927f target=com.android.internal.telephony.dataconnection.DcTracker }
+01-01 11:51:20.714  1176  1176 D DCT     : [0]onRoamingOff
+01-01 11:51:20.714  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.715  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.715  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.716  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.717  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.717  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.718  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.719  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.720  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.727  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.728  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.730  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.731  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.732  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.733  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.734  1176  1176 D DCT     : [0]isDataAllowed: not allowed due to - Attached= false - SIM not loaded - defaultDataSelected= false
+01-01 11:51:20.735  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: roamingOff
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]handleMessage msg={ when=-507ms what=270377 obj=android.os.AsyncResult@18c424c target=com.android.internal.telephony.dataconnection.DcTracker }
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: nwTypeChanged
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=hipri mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=mms mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.738  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=supl mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.739  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=dun mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.739  1176  1176 D DCT     : [0]setupDataOnConnectableApns: apnContext {mApnType=default mState=IDLE mWaitingApns={null} mWaitingApnsPermanentFailureCountDown=0 mApnSetting={null} mReason=radioTurnedOff mDataEnabled=false mDependencyMet=true}
+01-01 11:51:20.739  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.739  1176  1176 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -2 slotId = 0
+01-01 11:51:20.739  1176  1176 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 11:51:20.739  1176  1176 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 11:51:20.739  1176  1176 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 11:51:20.739  1176  1176 D DctController: EVENT_PHONE1_DATA_DETACH.
+01-01 11:51:20.740  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.740  1176  1176 D DctController: [TNF -2]got request NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 0
+01-01 11:51:20.740  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.740  1176  1176 D DctController: [TNF -2]Cellular needs Network for NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+01-01 11:51:20.740  1176  1327 D DcSwitchSM: [DcSwitchStateMachine-0] DefaultState: shouldn't happen but ignore msg.what=0x44008
+01-01 11:51:20.740  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.740  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.740  1176  1176 D DctController: [TNF -2]Request not useable, pending request.
+01-01 11:51:20.741  1176  1176 D SubscriptionInfoUpdater: [Receiver]+
+01-01 11:51:20.741  1176  1176 D SubscriptionInfoUpdater: Action: android.intent.action.SIM_STATE_CHANGED
+01-01 11:51:20.741  1176  1176 D SubscriptionInfoUpdater: slotId: 0
+01-01 11:51:20.741  1176  1176 D SubscriptionInfoUpdater: simStatus: NOT_READY
+01-01 11:51:20.741  1176  1176 D SubscriptionInfoUpdater: Ignoring simStatus: NOT_READY
+01-01 11:51:20.741  1176  1176 D SubscriptionInfoUpdater: [Receiver]-
+01-01 11:51:20.742  1176  1176 D DebugService: DebugService DebugService:
+01-01 11:51:20.746  1176  1176 D SipService: SipService: started!
+01-01 11:51:20.757  1176  1176 D SipService: start:
+01-01 11:51:20.758  1176  1176 D DCT     : [0]handleMessage msg={ when=-147ms what=270369 obj=android.os.AsyncResult@efad79b target=com.android.internal.telephony.dataconnection.DcTracker }
+01-01 11:51:20.758  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.758  1176  1176 D GsmSMSDispatcher: GsmSMSDispatcher: subId = -2 slotId = 0
+01-01 11:51:20.758  1176  1176 E IccCardProxy: setExternalState: !override and newstate unchanged from NOT_READY
+01-01 11:51:20.758  1176  1176 D RILJ    : [3656]> RIL_REQUEST_QUERY_TTY_MODE [SUB0]
+01-01 11:51:20.762  1176  1176 D GsmSST  : [GsmSST] SubscriptionListener.onSubscriptionInfoChanged
+01-01 11:51:20.762  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.762  1176  1176 D DCT     : [0]SubscriptionListener.onSubscriptionInfoChanged
+01-01 11:51:20.762  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.762  1176  1176 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:20.763  1176  1176 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:20.763  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.764  1176  1251 D RilRequest: [3656]< RIL_REQUEST_QUERY_TTY_MODE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:20.764  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.766  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.768  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.768  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.769  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.810  1176  1176 E PhoneBase: Error! registerForCallWaiting() in PhoneBase should not be called, CDMAPhone inactive.
+01-01 11:51:20.841  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.841  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.841  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.841  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.841  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.842  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.842  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.846  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.847  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.847  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.847  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.847  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.847  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.847  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.848  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.848  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.848  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.848  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.848  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.848  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.848  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.848  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.848  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.849  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.849  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.849  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.849  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.849  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.849  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.849  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.850  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.850  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.850  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.850  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.850  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.850  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.850  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.850  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.850  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D DCT     : [0]getDataOnRoamingEnabled: phoneSubId=-2 isDataRoamingEnabled=false
+01-01 11:51:20.851  1176  1176 D DctController: handleMessage msg={ when=-89ms what=107 target=com.android.internal.telephony.dataconnection.DctController }
+01-01 11:51:20.851  1176  1176 D DctController: onSubInfoReady mPhoneNum=1
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D DctController: onSubInfoReady handle pending requests subId=-2
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D DctController: [TNF -2]evalPendingRequest, pending request size is 1
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D DctController: [TNF -2]evalPendingRequest: request = NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D DctController: [TNF -2]Cellular needs Network for NetworkRequest [ id=1, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:20.851  1176  1176 D DctController: [TNF -2]Request not useable, pending request.
+01-01 11:51:20.852  1176  1176 D DctController: processRequests
+01-01 11:51:20.856  1176  1176 D DctController: handleMessage msg={ when=-4ms what=100 target=com.android.internal.telephony.dataconnection.DctController }
+01-01 11:51:20.856  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:20.857  1176  1176 D DcSwitchAsyncChannel: [DcSwitchAsyncChannel-0]: rspIsIdle=true
+01-01 11:51:20.857  1176  1176 D DctController: onProcessRequest requestedPhoneId=-1, activePhoneId=-1
+01-01 11:51:21.282  1176  1207 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:21.283  1176  1207 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:21.334  1176  1203 D DCT     : [0]hasMatchedTetherApnSetting: APN=null
+01-01 11:51:21.854  1176  1176 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 11:51:21.854  1176  1176 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:22.864  1176  1207 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:22.867  1176  1207 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:22.869  1176  1203 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 11:51:22.869  1176  1203 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:22.878  1176  1207 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:22.879  1176  1207 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:22.888  1176  1342 D SubscriptionController: [getActiveSubInfoList]+
+01-01 11:51:22.890  1176  1342 D SubscriptionController: [getActiveSubInfoList] Sub Controller not ready
+01-01 11:51:22.993  1176  1342 D SubscriptionController: [getPhoneId] asked for default subId=-1
+01-01 11:51:22.993  1176  1342 D SubscriptionController: [getPhoneId]- invalid subId return=-1
+01-01 11:51:23.351  1176  1279 D GsmCellBroadcastHandler: mWakeLock released
+01-01 11:51:23.382  1176  1287 D CellBroadcastHandler: mWakeLock released
+01-01 11:51:23.432  1176  1306 D CdmaServiceCategoryProgramHandler: mWakeLock released
+01-01 11:51:23.516  1176  1281 D GsmInboundSmsHandler: IdleState.processMessage:5
+01-01 11:51:23.516  1176  1281 D GsmInboundSmsHandler: Idle state processing message type 5
+01-01 11:51:23.517  1176  1288 D CdmaInboundSmsHandler: IdleState.processMessage:5
+01-01 11:51:23.517  1176  1288 D CdmaInboundSmsHandler: Idle state processing message type 5
+01-01 11:51:23.518  1176  1281 D GsmInboundSmsHandler: mWakeLock released
+01-01 11:51:23.518  1176  1288 D CdmaInboundSmsHandler: mWakeLock released
+01-01 11:51:23.759   288   366 E RILQ    : (0/288): RIL[0][main] qcril_qmi_vote_for_modem_up_using_esoc: ESOC node is not available
+01-01 11:51:32.342  1176  1176 D RILJ    : [3657]> SCREEN_STATE: true [SUB0]
+01-01 11:51:32.671  1176  1176 D DCT     : [0]onReceive: action=android.intent.action.SCREEN_ON
+01-01 11:51:32.671  1176  1176 D DCT     : [0]stopNetStatPoll
+01-01 11:51:32.671  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:32.672  1176  1176 D DCT     : [0]overall state is IDLE
+01-01 11:51:32.672  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:32.679  1176  1176 D DCT     : [0]onReceive: action=android.intent.action.SCREEN_OFF
+01-01 11:51:32.679  1176  1176 D DCT     : [0]stopNetStatPoll
+01-01 11:51:32.679  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:32.680  1176  1176 D DCT     : [0]overall state is IDLE
+01-01 11:51:32.680  1176  1176 D SubscriptionController: [getSubId]- sSlotIdxToSubId.size == 0, return DummySubIds slotIdx=0
+01-01 11:51:32.763   288   366 I RILQ    : (0/288):RIL[0][main] qcril_qmi_init_core_client_handles: Client init failed, details: QMI Voice
+01-01 11:51:32.767  1176  1251 D RilRequest: [3657]< SCREEN_STATE error: com.android.internal.telephony.CommandException: RADIO_NOT_AVAILABLE ret=
+01-01 11:51:37.769   288   366 E RILQ    : (0/288): RIL[0][main] qcril_qmi_vote_for_modem_up_using_esoc: ESOC node is not available
